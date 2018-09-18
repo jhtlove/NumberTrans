@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="content">
+        输入数字：
+        <div>
+            <!--input onchange 焦点转移的时候才触发 keyup能保证输入内容后再调用函数-->
+            <input type="text" id="inputNumber" value="" onkeyup="checkNumber(this)">
+        </div>
+        转换结果：
+        <div>
+            <input type="text" id="output">
+        </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/check.js" type="text/javascript"></script>
+    <script src="js/convert.js" type="text/javascript"></script>
+</body>
+
+</html>
